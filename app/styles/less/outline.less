@@ -1,0 +1,294 @@
+/*TEMP OUTLINE STYLES FOR BARBER */
+body {
+  padding: 3px !important;
+}
+
+body > *,
+body > * > *,
+body > * > * > *,
+body > * > * > * > *,
+body > * > * > * > * > * {
+  position: relative;
+}
+
+body > *::before,
+body > * > *::before,
+body > * > * > *::before,
+body > * > * > * > *::before,
+body > * > * > * > * > *::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Courier New", "monotype";
+  text-transform: none;
+  white-space: nowrap;
+}
+
+body > * {
+  background-color: rgba(0, 128, 0, 0.2);
+  box-shadow: 0 0 0 2px #43810B;
+}
+
+body > *::before {
+  color: #fff;
+  background-color: #43810B;
+}
+
+body > * > * {
+  z-index: 1;
+  background-color: rgba(255, 45, 82, 0.2);
+  box-shadow: inset 0 0 0 3px #EF482A;
+}
+
+body > * > *::before {
+  color: #fff;
+  background-color: #EF482A;
+}
+
+body > * > * > * {
+  z-index: 1;
+  background-color: rgba(255, 255, 0, 0.4);
+  box-shadow: inset 0 0 0 2px #FAED33;
+}
+
+body > * > * > *::before {
+  font-size: 14px;
+  color: #333333;
+  background-color: #FAED33;
+}
+
+body > * > * > * > * {
+  background-color: rgba(32, 16, 176, 0.2);
+  box-shadow: inset 0 0 0 2px #2010b0;
+}
+
+body > * > * > * > *::before {
+  color: #fff;
+  background-color: #2010b0;
+}
+
+body > * > * > * > * > * {
+  background-color: rgba(164, 14, 201, 0.2);
+  box-shadow: inset 0 0 0 2px #a40ec9;
+}
+
+body > * > * > * > * > *::before {
+  color: #fff;
+  background-color: #a40ec9;
+}
+
+.nav-mock {
+  background-color: rgba(128, 128, 128, 0.4);
+  box-shadow: inset 0 0 0 2px #808080;
+}
+
+.nav-mock::before {
+  top: 0;
+  right: 0;
+  background-color: #808080;
+  content: "nav-mock";
+}
+
+.page-header::before {
+  top: 0;
+  right: 0;
+  content: "page-header";
+}
+
+.page-header__logo::before {
+  top: 0;
+  left: 0;
+  content: "page-header__logo";
+}
+
+.main-nav::before {
+  top: 0;
+  left: 0;
+  content: "main-nav";
+}
+
+.main-nav__wrapper::before {
+  top: 0;
+  right: 0;
+  content: "main-nav__wrapper";
+}
+
+.main-nav__list.site-list::before {
+  font-size: 12px;
+  z-index: 1;
+  bottom: 0;
+  right: 0;
+  content: "site-list";
+}
+
+.main-nav__list.user-list::before {
+  font-size: 12px;
+  z-index: 1;
+  bottom: 0;
+  right: 0;
+  content: "user-list";
+}
+
+.page-main::before {
+  z-index: 1;
+  top: 0;
+  right: 0;
+  content: "page-main";
+}
+
+.stats::before {
+  top: 0;
+  right: 0;
+  content: "stats";
+}
+
+.stats__header::before {
+  top: 0;
+  left: 0;
+  content: "stats__header";
+}
+
+.stats__list::before {
+  top: 0;
+  left: 0;
+  content: "stats__list";
+}
+
+.advantages::before {
+  top: 0;
+  right: 0;
+  content: "advantages";
+}
+
+.advantages__wrapper::before {
+  top: 0;
+  left: 0;
+  content: "advantages__wrapper";
+}
+
+.advantages__list::before {
+  bottom: 0;
+  left: 0;
+  content: "advantages__list";
+}
+
+.advantages__item::before {
+  font-size: 12px;
+  z-index: 1;
+  bottom: 0;
+  right: 0;
+  content: "advantages__item";
+}
+
+.news::before {
+  top: 0;
+  right: 0;
+  content: "news";
+}
+
+.news__wrapper::before {
+  top: 0;
+  left: 0;
+  content: "news__wrapper";
+}
+
+.news__title::before {
+  bottom: 0;
+  left: 0;
+  content: "news__title";
+}
+
+.news__list::before {
+  bottom: 0;
+  left: 0;
+  content: "news__list";
+}
+
+.news__item::before {
+  font-size: 12px;
+  z-index: 1;
+  bottom: 0;
+  right: 0;
+  content: "news__item";
+}
+
+.reviews::before {
+  top: 0;
+  right: 0;
+  content: "reviews";
+}
+
+.reviews__wrapper::before {
+  top: 0;
+  left: 0;
+  content: "reviews__wrapper";
+}
+
+.reviews__title::before {
+  bottom: 0;
+  left: 0;
+  content: "reviews__title";
+}
+
+.reviews__list::before {
+  bottom: 0;
+  left: 0;
+  content: "reviews__list";
+}
+
+.reviews__item::before {
+  font-size: 12px;
+  z-index: 1;
+  bottom: 0;
+  right: 0;
+  content: "reviews__item";
+}
+
+.page-footer::before {
+  z-index: 2;
+  top: 0;
+  right: 0;
+  content: "page-footer";
+}
+
+.page-footer__wrapper::before {
+  font-size: 14px;
+  top: 0;
+  left: 0;
+  content: "page-footer__wrapper";
+}
+
+.contacts::before {
+  bottom: 0;
+  left: 0;
+  content: "contacts";
+}
+
+.social::before {
+  bottom: 0;
+  left: 0;
+  content: "social";
+}
+
+.social__list::before {
+  font-size: 12px;
+  top: 0;
+  left: 0;
+  content: 'list';
+}
+
+.social__item::before {
+  font-size: 12px;
+  bottom: 0;
+  right: 0;
+  content: 'item';
+}
+
+.page-footer__copyright::before {
+  bottom: 0;
+  left: 0;
+  content: 'copyright';
+}

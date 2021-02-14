@@ -1,0 +1,67 @@
+// USER VARIABLES SECTION
+
+@accent: #fed237; // Accent Color
+@fontsize: 16px; // Body Font Size
+@bg-darkgrey: #292929;
+@bg-lightgray: #f8f5f2;
+@textcolor: #f7f4f1; // Text Color
+@userfont: "Arial", sans-serif; // User Font Family
+
+// IMPORT SECTION
+
+@import (less) "node_modules/normalize.css/normalize.css";
+
+// GENERAL DOCUMENT STYLES
+
+:root {
+  box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+.no-outline() {
+  outline: none;
+  background: transparent;
+
+  &::before {
+    display: none;
+  }
+}
+
+body {
+  min-width: 320px;
+  font-family: @userfont;
+  font-size: @fontsize;
+  color: @textcolor; 
+  position: relative;
+  overflow-x: hidden;
+  background-color: @bg-darkgrey;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+h1, h2, h3, h4, p {
+  padding: 0;
+  margin: 0;
+}
+
