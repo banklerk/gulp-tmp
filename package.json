@@ -1,5 +1,5 @@
 {
-  "name": "gulp-gd",
+  "name": "gulp_gd",
   "version": "1.0.0",
   "description": "Сборка gulp",
   "main": "index.js",
