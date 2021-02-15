@@ -1,5 +1,4 @@
 const { src, dest, parallel, series, watch } = require('gulp')
-const $ = require('gulp-load-plugins')()
 const browserSync = require('browser-sync').create()
 const smartgrid = require('smart-grid')
 const buildhtml = require('./gulp/tasks/buildhtml')
