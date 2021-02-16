@@ -22,10 +22,12 @@ function server() {
     notify: false,
     open: true,
     cors: true
-  }),
+  })
+}
 
-    watch('./gulp/tasks/smartcfg.js', { usePolling: true },
-      series(grid)).on('change', browserSync.reload)
+function startwatch() {
+  watch('./gulp/tasks/smartcfg.js', { usePolling: true },
+    series(grid)).on('change', browserSync.reload)
 
   watch('app/styles/less/**/*', { usePolling: true },
     series(styles)).on('change', browserSync.reload)
@@ -43,5 +45,5 @@ function server() {
     series(buildhtml)).on('change', browserSync.reload)
 }
 
-exports.build = series(cleandist, buildhtml, scripts, styles, images,spriteSVG, iconPrint, buildcopy)
-exports.default = series(buildhtml, scripts, grid, styles, images, spriteSVG, iconPrint, parallel(server))
+exports.build = series(cleandist, buildhtml, scripts, styles, images, spriteSVG, iconPrint, buildcopy)
+exports.default = series(buildhtml, scripts, grid, styles, images, spriteSVG, iconPrint, parallel(server, startwatch))

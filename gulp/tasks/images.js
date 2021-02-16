@@ -7,6 +7,6 @@ const gulpif = require('gulp-if')
 module.exports = function images() {
   del('app/img/*.@(png|jpg|svg|ico)', { force: true })
   return src(['app/img/src/**/*.@(png|jpg|svg|ico)', '!app/img/src/inline-icons/*.svg'])
-  .pipe(gulpif(!argv.draft, $.tinypng('yw3kpc9DfNpPNmHlW0cC7BtcmXjbKJfL')))
+  .pipe(gulpif(!argv.start, $.tinypng('yw3kpc9DfNpPNmHlW0cC7BtcmXjbKJfL')))
     .pipe(dest('app/img/'))
 }

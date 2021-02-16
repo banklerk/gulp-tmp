@@ -4,7 +4,7 @@
   "description": "Сборка gulp",
   "main": "index.js",
   "scripts": {
-    "start": "gulp --draft",
+    "start": "gulp --start",
     "build": "gulp build"
   },
   "author": "banklerk",
